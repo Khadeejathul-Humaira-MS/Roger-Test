@@ -27,9 +27,7 @@ jobs:
         run: |
           echo "Creating new flow..."
           cxcli flow create "GitFlow" \
-          --agent-id "RogerDemo_Git2" \
+          --agent-name "RogerDemo_Git2" \
           --project-id "roger-470808" \
           --location-id "us-central1" \
-          --description "This is a new flow created via GitHub Actions" \
-          --output-format json \
-          --verbose
+          --description "This is a new flow created via GitHub Actions" 
