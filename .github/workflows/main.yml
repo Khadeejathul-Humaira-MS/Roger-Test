@@ -1,4 +1,4 @@
-name: Create New Flow -Sub Branch
+name: Import Flow -Sub Branch
 on:
   workflow_dispatch:
 jobs:
@@ -25,9 +25,12 @@ jobs:
       # 4️⃣ Create new flow inside the agent
       - name: Create new flow
         run: |
-          echo "Creating new flow..."
-          cxcli flow create "GitFlow" \
-          --agent-name "RogerDemo_Git2" \
+          echo "Importing bill payment flow"
+          cxcli flow import "Bill Payment" \
+          --agent-name "RogerDemo_Git1" \
           --project-id "roger-470808" \
           --location-id "us-central1" \
-          --description "This is a new flow created via GitHub Actions" 
+          --description "This is a new flow created via GitHub Actions" \
+          --input flows/Bill Payment \
+          --output-format json \
+          --verbose
