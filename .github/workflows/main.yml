@@ -1,4 +1,4 @@
-name: Import Flow -Sub Branch
+name: Update Flow -Sub Branch
 on:
   workflow_dispatch:
 jobs:
@@ -23,9 +23,9 @@ jobs:
 
  
       # 4️⃣ Create new flow inside the agent
-      - name: Create new flow
+      - name: Update Flow
         run: |
-          echo "Importing bill payment flow"
+          echo "Updating Flow"
           cxcli flow import "Bill Payment" \
           --agent-id "RogerDemo_Git1" \
           --project-id "roger-470808" \
