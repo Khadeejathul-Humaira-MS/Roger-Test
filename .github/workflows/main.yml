@@ -30,7 +30,4 @@ jobs:
           --agent-name "RogerDemo_Git1" \
           --project-id "roger-470808" \
           --location-id "us-central1" \
-          --description "This is a new flow created via GitHub Actions" \
-          --input flows/Bill Payment \
-          --output-format json \
-          --verbose
+          --description "Bill Payment" \
