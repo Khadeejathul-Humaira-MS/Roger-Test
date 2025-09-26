@@ -1,0 +1,6 @@
+{
+  "name": "2c9d1c80-e078-43b6-a364-0abaf57ed6f3",
+  "displayName": "Check Balance",
+  "priority": 500000,
+  "numTrainingPhrases": 10
+}
